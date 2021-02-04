@@ -31,28 +31,11 @@ jQuery(function ($) {
         items: 3,
 
       }
+      
 
     }
   });
-  owl = $('.TestimonialsCarusel').owlCarousel({
-    autoplay: true,
-    loop: true,
-    margin: 15,
-    nav: true,
-    items: 1,
-    dots: true,
-    dotsContainer: ".Images",
-    responsive: {
-      0: {
-        nav: true,
 
-      },
-      1000: {
-        nav: true,
-      }
-
-    }
-  });
   $('.Images').on('click', 'li', function (e) {
     owl.trigger('to.owl.carousel', [$(this).index(), 300]);
   });

@@ -404,9 +404,11 @@ footer .subscribe form{
 .close{
     display: inline-block;
     opacity: 1;
-    font-size:20px;
+    font-size:25px;
     float: left;
-
+}
+.halfModal .close span{
+    font-size:25px;
 
 }
 button:focus{
@@ -479,9 +481,7 @@ button:focus{
     height:100%;
 
 }
-.modalSlider img{
-    height:100%
-}
+
 /* -- quantity box -- */
 
 .quantity {
@@ -541,10 +541,15 @@ float: left; }
     .quantity.buttons_added .minus:focus,
    .quantity.buttons_added .plus:focus {
     outline: none; }
-   
+   .textLeft{
+       text-align: left;
+   }
    @media(min-width:350px) and (max-width:767px){
+       body{
+           font-size:12px;
+       }
        .modal-content{
-           max-width: 90%;
+           max-width: 100%;
            padding:0
        }
        .requestForm .form-group{
@@ -557,11 +562,129 @@ float: left; }
            float: none;
        }
        .navbar li{
-           margin-left:30px;
+           margin-left:15px;
+
+       }
+       .navbar li:last-child{
+           float: none !important;
        }
     .heroText{
         margin-right:0;
+        text-align: center;
    }
    .heroText h1 {
     font-size: 11.444444444444445em;}
+    .subscribeCobtent{
+        width:100%;
+    }
+    #pills-tab .nav-link {
+        width: auto;
+        height: auto;
+        padding:5px;
+        line-height: 30px;;
+    }
+    .tabCarusel .owl-nav button.owl-prev{
+        right:10%
+    }
+    .tabCarusel .owl-nav button.owl-next{
+        left:10%;
+    }
+    .tabCarusel .owl-nav {
+        position: relative;
+        bottom: -29px;
+        width:100%;
+        margin-top: 0;
+    }
+    .sendBtn{
+        width:100%;
+    }
+    .logo{
+        height:auto
+    }
+    .sliderNav {
+        display: none;
+    }
+    footer .subscribeCobtent{
+        width:100%;
+    }
+    .requestForm .form-group{
+        margin-left:0;
+    }
+    .preview {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    #pills-tab .nav-item{
+        margin-left:5px;
+    }
+    .nav.nav-pills{
+        margin-bottom: 20px;;
+    }
+    .prevText{
+        margin-top:50px;
+    }
+    .newModa{
+        bottom: -32px;
+    }
+    .owl-nav{
+        margin:20px 0;
+    }
+    .heroText{
+        margin-top:40px;
+    }
+    .tabsSection{
+padding-top:0;
+    }
+    .heroSection{
+        padding-bottom:30px;
+    }
+    .textLeft{
+        text-align: right;
+        margin-top:20px;
+    }
+}
+@media(min-width:767px) and (max-width:1024px){
+    body{
+        font-size:13px;
+    }
+    .navbar li{
+        margin-left:30px;
+    }
+    #requestDetails .modal-dialog{
+        max-width: 95%;
+        height:auto;
+        right:-2%
+    }
+    .requestForm .form-group{
+        margin-left:30px;
+    }
+    .logo{
+        margin-top:30px;
+    }
+    .sliderNav {
+        position: absolute;
+        right: -32%;
+        top: 14%;}
+
+.heroText{
+    margin-right:0;
+}
+.subscribeCobtent{
+    width:100%;
+}
+.owl-nav{
+    margin:20px 0;
+}
+.heroText{
+    margin-top:40px;
+}
+.newModa{
+    bottom: -32px;
+}
+#pills-tab .nav-item {
+    margin-left: 10px;
+}
+#pills-tab .nav-link{
+    width:auto;
+}
 }
