@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>ٍShop </title>
+  <title>Shop </title>
   <!--Css Files and Fonts-->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/css/animate.min.css" rel="stylesheet">
@@ -23,12 +23,12 @@
   <section class="heroSection">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-1">
+        <div class="col-lg-1 col-md-2 col-3  order-lg-1 order-3">
           <div class="logo">
             <h5>الشعار <span>هنا</span></h5>
           </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-lg-5 col-md-4 col-9 order-lg-2 order-2  ">
           <div class="HeroSlider owl-carousel">
             <div class="carouselItem">
               <img src="assets/images/slider.png" alt="">
@@ -59,7 +59,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-6 clearfix">
+        <div class="col-md-6  order-lg-3 order-1 clearfix">
           <div class="navbar clearfix">
             <ul>
               <li>
@@ -387,68 +387,72 @@
     aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content clearfix">
-        <div class="halfModal float-right">
-          <img src="assets/images/slider.png" alt="">
-        </div>
-        <div class="halfModal secondSection">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <div class="detailsTitle">
-            <h3>فستان تل مطرز</h3>
-            <span>500$</span>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-12 order-lg-1 order-md-1 order-2">
+            <div class="modalSlider">
+              <img src="assets/images/slider.png" alt="">
+
+            </div>
           </div>
-
-          <form action="" class="requestForm">
+          <div class="col-lg-6 col-md-6 col-12 order-lg-2 order-md-2 order-1 halfModal ">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
             <div class="detailsTitle">
-              <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص</p>
+              <h3>فستان تل مطرز</h3>
+              <span>500$</span>
+            </div>
 
-              <div class="form-group modalFormgroup text-right noMargin">
-                <label> المقاس</label>
-                <select name="" id="" class="form-control">
-                  <option value="">اختر</option>
-                </select>
-              </div>
-              <div class="form-group modalFormgroup text-right noMargin">
-                <label> الكمية</label>
-                <div class="quantity buttons_added">
-                  <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max=""
-                    name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern=""
-                    inputmode=""><input type="button" value="+" class="plus">
+            <form action="" class="requestForm">
+              <div class="detailsTitle">
+                <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص</p>
+
+                <div class="form-group modalFormgroup text-right noMargin">
+                  <label> المقاس</label>
+                  <select name="" id="" class="form-control">
+                    <option value="">اختر</option>
+                  </select>
+                </div>
+                <div class="form-group modalFormgroup text-right noMargin">
+                  <label> الكمية</label>
+                  <div class="quantity buttons_added">
+                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max=""
+                      name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern=""
+                      inputmode=""><input type="button" value="+" class="plus">
+                  </div>
                 </div>
               </div>
-            </div>
-            <section class="requestSection text-center">
+              <section class="requestSection">
 
-              <h4>اطلب الآن</h4>
-              <p>قم بإدخال بياناتك وسيتم التواصل معك لتأكيد طلب القطعة المميزة الخاصة بك، وتوصيلها لكِ أينما كنتِ
-              </p>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="اسمك كاملا">
-              </div>
-              <div class="form-group noMargin">
-                <input type="text" class="form-control" placeholder="رقم الجوال">
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" placeholder="البريد الالكتروني">
-              </div>
-              <div class="form-group noMargin">
-                <select name="" id="" class="form-control">
-                  <option value="">البلد</option>
-                </select>
-              </div>
-              <button type="submit" class="btn sendBtn"> ارسال</button>
-            </section>
+                <h4>اطلب الآن</h4>
+                <p>قم بإدخال بياناتك وسيتم التواصل معك لتأكيد طلب القطعة المميزة الخاصة بك، وتوصيلها لكِ أينما كنتِ
+                </p>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="اسمك كاملا">
+                </div>
+                <div class="form-group noMargin">
+                  <input type="text" class="form-control" placeholder="رقم الجوال">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="البريد الالكتروني">
+                </div>
+                <div class="form-group noMargin">
+                  <select name="" id="" class="form-control">
+                    <option value="">البلد</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn sendBtn"> ارسال</button>
+              </section>
 
-          </form>
+            </form>
+          </div>
         </div>
+
 
       </div>
     </div>
   </div>
-  <script>
-    $(".modal").modal("show")
-  </script>
+
 </body>
 
 </html>

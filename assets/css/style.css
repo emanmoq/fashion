@@ -47,6 +47,7 @@ body{
     direction: rtl;
     background-color: #FAF9F9;;
     color:#414141;
+    overflow: visible;
 }
 .logo{
     height:60px;
@@ -403,7 +404,7 @@ footer .subscribe form{
 .close{
     display: inline-block;
     opacity: 1;
-    font-size:30px;
+    font-size:20px;
     float: left;
 
 
@@ -422,9 +423,8 @@ button:focus{
     width:200px;
 }
 .halfModal{
-    width:50%;
-    display: inline-block;
-    float: left;
+    padding:32px;
+
 }
 .halfModal h3{
     font-size:1.7777777777777777em;
@@ -435,11 +435,17 @@ button:focus{
     font-size:2.7777777777777777em;
 }
 .secondSection{
-    padding:32px;
 }
 .detailsTitle{
     padding-bottom:20px;
-    border-bottom: rgba(65, 65, 65, .1);
+    border-bottom:1px solid rgba(65, 65, 65, .1);
+}
+.detailsTitle {
+    margin-bottom:10px;
+}
+#requestDetails .modal-dialog{
+    height:700px;
+    max-width: 1240px;;
 }
 #requestDetails .form-group{
     margin-left:22px;
@@ -469,8 +475,13 @@ button:focus{
     width:70%;
     float: left;
 }
+.modalSlider{
+    height:100%;
 
-
+}
+.modalSlider img{
+    height:100%
+}
 /* -- quantity box -- */
 
 .quantity {
@@ -531,4 +542,26 @@ float: left; }
    .quantity.buttons_added .plus:focus {
     outline: none; }
    
-   
+   @media(min-width:350px) and (max-width:767px){
+       .modal-content{
+           max-width: 90%;
+           padding:0
+       }
+       .requestForm .form-group{
+           width:100%;
+           margin-right:0;
+       }
+
+       .halfModal{
+           width:100%;
+           float: none;
+       }
+       .navbar li{
+           margin-left:30px;
+       }
+    .heroText{
+        margin-right:0;
+   }
+   .heroText h1 {
+    font-size: 11.444444444444445em;}
+}
