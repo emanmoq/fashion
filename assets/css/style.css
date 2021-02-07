@@ -702,4 +702,16 @@ padding-top:0;
 #pills-tab .nav-link{
     width:auto;
 }
+.tabCarusel .owl-nav button.owl-prev{
+    right:10%
+}
+.tabCarusel .owl-nav button.owl-next{
+    left:10%;
+}
+.tabCarusel .owl-nav {
+    position: relative;
+    bottom: -29px;
+    width:100%;
+    margin-top: 0;
+}
 }
