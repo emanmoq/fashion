@@ -102,8 +102,8 @@
               <li>
                 <a href="index.html">الرئيسية</a>
               </li>
-              <li class="reqBtn">
-                <a href="#" data-toggle="modal" data-target="requestModal">اطلب الان</a>
+              <li class="reqBtn"  >
+                <a href="#" data-toggle="modal" data-target="#requestModal">اطلب الان</a>
               </li>
               <li class="float-left">
                 <a href="#"> اتصل بنا
@@ -184,7 +184,7 @@
               <div class="tabCarusel owl-carousel">
                 <div class="carouselItem">
                   <img src="assets/images/1.png" alt="">
-                  <a href="" class="carreqBtn btn"> اطلب الان</a>
+                  <a href="" class="carreqBtn btn" > اطلب الان</a>
                 </div>
                 <div class="carouselItem">
 
@@ -376,18 +376,7 @@
     </div>
   </div>
   <!--The js files -->
-
-  <script type="text/javascript" src="assets/js/jquery.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/owl.carousel.js"></script>
-  <script src="assets/js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
-
-  <script type="text/javascript" src="assets/js/main.js"></script>
-
-  <div class="modal fade show" id="requestModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  <div class="modal fade show" id="requestModal" tabindex="-1" role="dialog"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -430,7 +419,7 @@
       </div>
     </div>
   </div>
-  <div class="modal fade show" id="requestDetails" role="dialog" aria-labelledby="exampleModalLabel"
+  <div class="modal fade show" id="requestDetails" role="dialog" 
     aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content clearfix">
@@ -522,9 +511,19 @@
       </div>
     </div>
   </div>
+  <script type="text/javascript" src="assets/js/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/owl.carousel.js"></script>
+  <script src="assets/js/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
+  <script type="text/javascript" src="assets/js/main.js"></script>
+
+
 
   <script>
-    $("#requestDetails").modal("show");
     $('.modal').on('shown.bs.modal', function (e) {
       $('.slider-for').slick({
   slidesToShow: 1,
