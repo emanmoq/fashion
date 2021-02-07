@@ -524,6 +524,7 @@
 
 
   <script>
+    $("#requestDetails").modal("show")
     $('.modal').on('shown.bs.modal', function (e) {
       $('.slider-for').slick({
   slidesToShow: 1,
@@ -540,7 +541,10 @@ $('.slider-nav').slick({
   dots: true,
   centerMode: true,
   focusOnSelect: true,
-	rtl: true
+	rtl: true,
+  responsive:{
+    slidesToShow: 3
+  }
 
 });
 })
