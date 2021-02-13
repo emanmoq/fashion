@@ -14,11 +14,18 @@
     src:url("../fonts/ArbFONTS-Tajawal-Medium.ttf");
 }
 @font-face{
-    font-family:"ArbFONTS-Tajawal-Regular-1";
+    font-family:var(--font-family);
     src:url("../fonts/ArbFONTS-Tajawal-Regular-1.ttf");
 }
+:root{
+    --main-color:#E22555;
+    --font-color:#414141;
+    --font-famiy:"ArbFONTS-Tajawal-Regular-1";
+    --bold-font:"ArbFONTS-Tajawal-Bold-1";
+
+}
 h1,h2,h3,h4,h5{
-    font-family:"ArbFONTS-Tajawal-Bold-1";  
+    font-family:var(--bold-font)  
 }
 /* public */
 img{
@@ -39,14 +46,14 @@ a:hover{
 }
 body{
     box-sizing: border-box;
-    font-family:"ArbFONTS-Tajawal-Regular-1";
+    font-family:var(--font-family);
     position: relative;
     overflow-x: hidden;
     font-size:14px;
     text-align: right;
     direction: rtl;
     background-color: #FAF9F9;;
-    color:#414141;
+    color:var(--font-color);
     overflow: visible;
 }
 .logo{
@@ -58,7 +65,7 @@ font-size:1.3333333333333333em;
 color:#212121;
 }
 .logo span{
-    color:#E22555;
+    color:var(--main-color);
 }
 .sliderNav .sliderDots li {
     cursor: pointer;
@@ -76,7 +83,7 @@ color:#212121;
 }
 .no {
    font-size: 2.2777777777777777em;
-   color:#414141;
+   color:var(--font-color);
 }
 .no span{
     font-size:24px;
@@ -93,7 +100,7 @@ color:#212121;
     position: absolute;
 }
 .owl-nav button:hover{
-    background-color: #E22555  !important;
+    background-color: var(--main-color)  !important;
 }
 .owl-nav button:hover span{
    color: white;;
@@ -128,18 +135,18 @@ z-index: 99;}
     margin-left:0;
 }
 .navbar li p{
-    color:#E22555;
+    color:var(--main-color);
 }
 .navbar ul{width:100%;}
 .navbar li a {
-    color:#414141;
-    font-family:"ArbFONTS-Tajawal-Bold-1";
+    color:var(--font-color);
+    font-family:var(--bold-font)
     font-size:1.3333333333333333em;
 }
 .navbar li.reqBtn a{
-    color:#414141;
+    color:var(--font-color);
     opacity: .7;
-    font-family:"ArbFONTS-Tajawal-Regular-1";
+    font-family:var(--font-family);
 ;
 }
 .heroText h1{
@@ -152,7 +159,7 @@ z-index: 99;}
     z-index: 9;
 }
 .heroText h1 span{
-    color:#E22555;
+    color:var(--main-color);
 }
 .heroText p{
     display: inline-block;
@@ -169,11 +176,11 @@ z-index: 99;}
 }
 .subscribe h5{
     font-size:1.3333333333333333em;
-    color:#414141;
+    color:var(--font-color);
 }
 .subscribe p{
     font-size: 1.3333333333333333em;
-    color:#414141;
+    color:var(--font-color);
 
 }
 .subscribeCobtent{
@@ -185,14 +192,14 @@ z-index: 99;}
 }
 .subscribe .subscribeBtn{
     position: absolute;
-    background-color: #E22555;
+    background-color: var(--main-color);
     border-radius: 0;
     height:60px;
     width:144px;
     color:white;
     left:0;
     top:0;
-    border:1px solid #E22555
+    border:1px solid var(--main-color)
 }
 .form-control{
     background-color: white;;
@@ -208,13 +215,13 @@ z-index: 99;}
     color:#9A999E
 }
 .subscribe .subscribeBtn:hover{
-    background-color: #414141;
-    border-color: #414141;
+    background-color: var(--font-color);
+    border-color: var(--font-color);
 }
 .newModa{
 position: absolute;
 font-size:1.3333333333333333em;
-color:#414141;
+color:var(--font-color);
 right:39%;
 bottom: 10px;
 opacity: .7;;
@@ -247,7 +254,7 @@ opacity: .7;;
     margin-left:0;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-    background-color: #E22555;
+    background-color: var(--main-color);
     border-radius: 100px;
 }
 .tabCarusel{
@@ -271,15 +278,15 @@ opacity: .7;;
     height:80px;
     background-color: #F7F7F8;
     font-size: 1.3333333333333333em;
-    font-family:"ArbFONTS-Tajawal-Bold-1";  
-    color:#414141;
+    font-family:var(--bold-font)  
+    color:var(--font-color);
     bottom:10%;
     left:10%;
     line-height: 60px;
     border-radius:0;
 }
 .carreqBtn:hover{
-    background-color: #E22555;
+    background-color: var(--main-color);
     color:white;
 }
 .previewImg{
@@ -294,11 +301,11 @@ opacity: .7;;
 }
 .prevText h2{
     font-size:4em;
-    color:#E22555;
+    color:var(--main-color);
     margin-bottom: 17px;;
 }
 .prevText h5{
-    color:#414141;
+    color:var(--font-color);
     font-size:2.2222222222222223em;
     opacity: .9;
 }
@@ -328,7 +335,7 @@ opacity: .7;;
 .sendBtn{
     width:450px;
     height:60px;
-    background-color: #E22555;
+    background-color: var(--main-color);
     color:white;
     margin:auto;
     margin-top:35px;
@@ -340,7 +347,7 @@ opacity: .7;;
     color:white;
 }
 footer{
-    background-color: #414141;
+    background-color: var(--font-color);
     padding-top:35px;
     padding-bottom: 60px;;
 }
@@ -368,7 +375,7 @@ footer .subscribe{
     display: block;
     width:30px;
     height:30px;
-    background-color:#E22555 ;
+    background-color:var(--main-color) ;
     border-radius: 50%;
     text-align: center;
 }
@@ -430,10 +437,10 @@ button:focus{
 }
 .halfModal h3{
     font-size:1.7777777777777777em;
-    color:#E22555
+    color:var(--main-color)
 }
 .halfModal span{
-    color:#414141;
+    color:var(--font-color);
     font-size:2.7777777777777777em;
 }
 .secondSection{
@@ -467,7 +474,7 @@ button:focus{
 .modalFormgroup label{
    font-size:  1.3333333333333333em;
    display: inline-block;
-   font-family:"ArbFONTS-Tajawal-Bold-1";
+   font-family:var(--bold-font)
    width:20%;
    text-align:right;
 
@@ -530,7 +537,7 @@ float: left; }
    
    .quantity.buttons_added .minus:hover,
    .quantity.buttons_added .plus:hover {
-    background: #E22555; }
+    background: var(--main-color); }
    
    .quantity input::-webkit-outer-spin-button,
    .quantity input::-webkit-inner-spin-button {
