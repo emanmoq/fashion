@@ -1,6 +1,6 @@
 jQuery(function ($) {
 
-  $(".up").on("click", function () { $("html, body").animate({ scrollTop: 0 }, "slow"); return false; });
+//declare hero slider 
   $('.HeroSlider').owlCarousel({
     autoplay: true,
     loop: false,
@@ -9,9 +9,7 @@ jQuery(function ($) {
     rtl:true,
     dotsContainer: '.sliderDots',
   });
-  $('.sliderDots').on('click', 'li', function(e) {
-    $(".HeroSlider").trigger('to.owl.carousel', [$(this).index(), 300]);
-   });
+// declare slider on tabs
   $('.tabCarusel').owlCarousel({
     autoplay: true,
     loop: false,
@@ -35,10 +33,7 @@ jQuery(function ($) {
 
     }
   });
-
-  $('.Images').on('click', 'li', function (e) {
-    owl.trigger('to.owl.carousel', [$(this).index(), 300]);
-  });
+/************** script for quantity increment and decrement ******* */
   function wcqib_refresh_quantity_increments() {
     jQuery("div.quantity:not(.buttons_added), td.quantity:not(.buttons_added)").each(function(a, b) {
         var c = jQuery(b);
@@ -61,8 +56,32 @@ String.prototype.getDecimals || (String.prototype.getDecimals = function() {
         e = a.attr("step");
     b && "" !== b && "NaN" !== b || (b = 0), "" !== c && "NaN" !== c || (c = ""), "" !== d && "NaN" !== d || (d = 0), "any" !== e && "" !== e && void 0 !== e && "NaN" !== parseFloat(e) || (e = 1), jQuery(this).is(".plus") ? c && b >= c ? a.val(c) : a.val((b + parseFloat(e)).toFixed(e.getDecimals())) : d && b <= d ? a.val(d) : b > 0 && a.val((b - parseFloat(e)).toFixed(e.getDecimals())), a.trigger("change")
 });
+/***************************************** */
+// code for work slider on modal
+$('.modal').on('shown.bs.modal', function (e) {
+  //declare slider on modal with small thumbs
+  $('.slider-for').slick({
+slidesToShow: 1,
+slidesToScroll: 1,
+arrows: false,
+asNavFor: '.slider-nav',
+rtl: true
 
+});
+$('.slider-nav').slick({
+slidesToShow: 3,
+slidesToScroll: 1,
+asNavFor: '.slider-for',
+dots: true,
+centerMode: true,
+focusOnSelect: true,
+rtl: true,
+responsive:{
+slidesToShow: 3
+}
 
+});
+})
 
 });
 
